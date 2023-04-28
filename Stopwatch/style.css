@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url(https://c.tadst.com/gfx/1200x630/fb-stopwatch2.png?1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #F5F5F5;
+  text-align: center;
+}
+
+.container {
+  margin-top: 5rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  padding :10px;
+  background-color: rgb(1, 1, 1);
+  opacity: 0.7;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fdfdfd;
+  text-transform: uppercase;
+}
+
+.display {
+  margin-top: 3rem;
+  border-radius: 30px;
+  background: linear-gradient(to bottom, #f5f5f5, #aeaeae);
+  font-size: 4rem;
+  font-weight: bold;
+  color: #333333;
+  border: 2px solid #CCCCCC;
+  padding: 1rem;
+  display: inline-block;
+}
+
+.display span {
+  padding: 0.5rem;
+}
+
+.controls {
+  margin-top: 2rem;
+}
+
+button {
+  font-size: 1.5rem;
+  border-radius: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #333333;
+  border: none;
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #4F4F4F;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button:disabled {
+  background-color: #CCCCCC;
+  cursor: default;
+}
+
+
+
+.mdi {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.mdi-play:before {
+  content: "\F40A";
+}
+
+.mdi-pause:before {
+  content: "\F3CD";
+}
+
+.mdi-restart:before {
+  content: "\F466";
+}
+
+.mdi-timer:before {
+  content: "\F2F1";
+}
